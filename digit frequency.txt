@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{   
+    int arr[10]={0};
+    int i;
+    char str[1000];
+    long long int n,rem;
+    
+    scanf("%s",str);
+    
+    for(i=0;i<strlen(str);i++)
+    {
+        if(str[i]>=48 && str[i]<=57)
+        {
+          arr[str[i]-48]++;  
+        }
+    }
+    
+    
+    for(i=0;i<10;i++)
+    {
+    printf("%d ",arr[i]);
+    }
+    return 0;
+}
